@@ -46,7 +46,7 @@ document.addEventListener('keydown', function (e) {
 });
 
 ///////////////////////////////////////
-// scroll Down (lean more)
+// scroll Down
 
 document.getElementById('section--1');
 const allButton = document.getElementsByTagName('button');
@@ -54,7 +54,6 @@ const allButton = document.getElementsByTagName('button');
 btnScrollTo.addEventListener('click', function() {
   section1.scrollIntoView({behavior: 'smooth'})
 });
-
 ///////////////////////////////////////
 // page navigation 1st method
 /*document.querySelectorAll('.nav__link').forEach(function(el) {
@@ -173,7 +172,7 @@ const sectionObserver = new IntersectionObserver(revelSection, {
 //geting value(section) from very top
 allSection.forEach(function(section) {
   sectionObserver.observe(section);
-  // section.classList.add('section--hidden');
+  section.classList.add('section--hidden');
 });
 
 ///////////////Lasy Loading page//////////////
